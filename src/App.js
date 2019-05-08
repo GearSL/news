@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-    let helloWorld = 'Добро пожаловать в Путь к изучению React!!!';
+    let helloWorld = 'Добро пожаловать в Путь к изучению React!';
     let user = {
         first_name : 'Ilyas',
         last_name : 'ismailov',
