@@ -22,25 +22,20 @@ const list = [
 ];
 
 function App() {
-    const listElements = list.map((element)=>(
-        <li key={element.objectID}> {element.title} {element.url}</li>)
-    );
     return (
     <div className="App">
         <header className="App-header">
-            {list.map(function (item) {
-                return (
-                    <div key={item.objectID}>
-                        <span>
+            {list.map((item)=>(
+                <div key={item.objectID}>
+                    <span>
                         <a href={item.url}>{item.title}</a>
-                        </span>
-                        <span>{item.author}</span>
-                        <span>{item.num_comments}</span>
-                        <span>{item.points}</span>
-                    </div>
-                );
-            })}
-            <img src={logo} className="App-logo" alt="logo" />
+                    </span>
+                    <span>{item.author}</span>
+                    <span>{item.num_comments}</span>
+                    <span>{item.points}</span>
+                </div>)
+            )}
+            <img src = {logo} className="App-logo" alt="logo" />
         </header>
     </div>
   );
