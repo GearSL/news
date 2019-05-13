@@ -25,7 +25,7 @@ function App() {
     return (
     <div className="App">
         <header className="App-header">
-            {list.map((item)=>(
+            {list.map((item) =>
                 <div key={item.objectID}>
                     <span>
                         <a href={item.url}>{item.title}</a>
@@ -33,7 +33,7 @@ function App() {
                     <span>{item.author}</span>
                     <span>{item.num_comments}</span>
                     <span>{item.points}</span>
-                </div>)
+                </div>
             )}
             <img src = {logo} className="App-logo" alt="logo" />
         </header>
